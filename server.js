@@ -16,4 +16,8 @@ server.get('/', (req, res) => {
     res.render('home')
 })
 
+server.get('/menu', (req, res) => {
+    res.render('slider')
+})
+
 module.exports = server
