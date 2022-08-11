@@ -12,6 +12,8 @@ server.engine('hbs', hbs.engine({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
 
-
+server.get('/', (req, res) => {
+    res.render('home')
+})
 
 module.exports = server
