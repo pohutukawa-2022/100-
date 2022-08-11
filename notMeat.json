@@ -1,0 +1,51 @@
+"notMeat" = [
+  {
+    "id": 1,
+    "name": "Jelly Bite",
+    "Image": "",
+    "rarity": "rare",
+    "healthRating": 2,
+    "ageMonths": 8,
+    "poisonStatus": "not poisonous",
+  },
+
+  {
+    "id": 2,
+    "name": "Grapefruit",
+    "Image": "",
+    "rarity": "common",
+    "healthRating": 4,
+    "ageMonths": 0.5,
+    "poisonStatus": "not poisonous",
+  },
+
+  {
+    "id": 3,
+    "name": "Paint",
+    "Image": "",
+    "rarity": "common",
+    "healthRating": 0,
+    "ageMonths": 15,
+    "poisonStatus": "poisonous",
+  },
+
+  {
+    "id": 4,
+    "name": "Seaweed",
+    "Image": "",
+    "rarity": "uncommon",
+    "healthRating": 5,
+    "ageMonths": 4,
+    "poisonStatus": "not poisonous",
+  },
+
+  {
+    "id": 5,
+    "name": "Seeds",
+    "Image": "",
+    "rarity": "common",
+    "healthRating": 5,
+    "ageMonths": 6,
+    "poisonStatus": "not poisonous",
+  },
+]
