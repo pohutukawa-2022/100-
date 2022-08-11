@@ -40,7 +40,7 @@
       "id": 5,
       "name": "Kiwi",
       "image": "/img/kiwi.jpg",
-      "rarity": "common",
+      "rarity": "rare",
       "healthRating": 4,
       "ageMonths": 1,
       "poisonStatus": "not poisonous"
