@@ -20,4 +20,8 @@ server.get('/menu', (req, res) => {
     res.render('slider')
 })
 
+server.get('/menu/:food', (req, res) => {
+    res.render('slider')
+})
+
 module.exports = server
