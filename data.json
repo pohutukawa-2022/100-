@@ -1,0 +1,49 @@
+{
+  "meatlovers": [
+    {
+      "id": 1,
+      "name": "Beef",
+      "image": "/img/beef.jpg",
+      "rarity": "common",
+      "healthRating": 4,
+      "ageMonths": 10,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 2,
+      "name": "Salmon",
+      "image": "/img/salmon.jpg",
+      "rarity": "common",
+      "healthRating": 5,
+      "ageMonths": 2,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 3,
+      "name": "Pork",
+      "image": "/img/pork.jpg",
+      "rarity": "common",
+      "healthRating": 2,
+      "ageMonths": 15,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 4,
+      "name": "Pufferfish",
+      "image": "/img/pufferfish.jpg",
+      "rarity": "uncommon",
+      "healthRating": 5,
+      "ageMonths": 1,
+      "poisonStatus": "poisonous"
+    },
+    {
+      "id": 5,
+      "name": "Kiwi",
+      "image": "/img/kiwi.jpg",
+      "rarity": "common",
+      "healthRating": 4,
+      "ageMonths": 1,
+      "poisonStatus": "not poisonous"
+    }
+  ]
+}
