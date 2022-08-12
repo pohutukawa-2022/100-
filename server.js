@@ -36,15 +36,9 @@ server.get('/', (req, res) => {
 })
 
 server.get('/meat', (req, res) => {
-  const viewData = {
-    meat: food.meatlovers,
-    veg: food.notMeat,
-  }
   res.render('slider', viewData)
 })
 
-server.get('/meat/:food', (req, res) => {
-  res.render('beef')
-})
+
 
 module.exports = server
