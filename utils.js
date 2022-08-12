@@ -13,7 +13,27 @@ function getData(cb) {
   })
 }
 function updateData() {
-    console.log('update data func incomplete')
+    // get starting data
+    getData( data => {
+        // update data
+        const newData = {
+            ...data,
+            url: '/meat'
+        }
+        // JSON.stingify
+        try {
+            const stringData = JSON.stringify(newData, null, 2)
+            // write back to the file
+            fs.writeFile(filepath, stringData, 'utf8', (err) => {
+                if (err) {
+                    console.error(' error error freclin error')
+                }
+
+            })
+        } catch (stringifyErr) {
+            console.log('Failed at updating data')
+        }
+    })
 } 
 
 module.exports = { getData, updateData }
