@@ -43,6 +43,7 @@ body{
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .btn:hover{
