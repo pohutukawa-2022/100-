@@ -11,17 +11,25 @@ server.use(express.urlencoded({ extended: false }))
 server.engine('hbs', hbs.engine({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
+// Getting data from json
+const { getData, updateData } = require('./utils')
+let food
+getData((data) => (food = data))
 
 server.get('/', (req, res) => {
-    res.render('home')
+  res.render('home')
 })
 
 server.get('/menu', (req, res) => {
-    res.render('slider')
+  const viewData = {
+    meat: food.meatlovers,
+    veg: food.notMeat,
+  }
+  res.render('slider', viewData)
 })
 
 server.get('/menu/:food', (req, res) => {
-    res.render('slider')
+  res.render('slider')
 })
 
 module.exports = server
