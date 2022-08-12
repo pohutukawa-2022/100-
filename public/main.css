@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    perspective: 800px;
+}
+
+/* 
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.title h1{
+    font-size: 3rem;
+} */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.btn{
+    position: relative;
+    height: 150px;
+    width: 450px;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: rotateX(-90deg);
+}
+
+.btn a{
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: .5rem;
+}
+
+.side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.default-side{
+    background-color: #fff;
+    border: 10px solid #000;
+    color: #000;
+    transform: translateZ(75px)
+}
+
+.hover-side{
+    color: #fff;
+    background-color: #000;
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.btn2{
+    position: relative;
+    height: 150px;
+    width: 450px;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+.btn2:hover{
+    transform: rotateX(-90deg);
+}
+
+.btn2 a{
+    text-decoration: none;
+    letter-spacing: .5rem;
+    color: inherit;
+}
+
+.side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.default-side2{
+    background-color: #fff;
+    border: 10px solid #000;
+    color: #000;
+    transform: translateZ(75px)
+}
+
+.hover-side2{
+    color: #fff;
+    background-color: #000;
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+
+/* .btn:hover , .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn a{
+    color: #fff;
+    letter-spacing: 2px;
+} */
