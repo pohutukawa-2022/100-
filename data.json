@@ -44,6 +44,15 @@
       "healthRating": 4,
       "ageMonths": 1,
       "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 6,
+      "name": "Chicken",
+      "image": "/img/kiwi.jpg",
+      "rarity": "rare",
+      "healthRating": 4,
+      "ageMonths": 1,
+      "poisonStatus": "not poisonous"
     }
   ],
   "notMeat" : [
