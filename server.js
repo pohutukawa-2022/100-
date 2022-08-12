@@ -39,6 +39,9 @@ server.get('/', (req, res) => {
 server.get('/meat', (req, res) => {
   res.render('slider')
 })
+server.get('/meat/img-info', (req, res) => {
+  res.render('meat')
+})
 
 
 
