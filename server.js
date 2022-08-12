@@ -20,6 +20,7 @@ server.set('view engine', 'hbs')
 //     food = data
 //     updateData()
 // })
+
 const filePath = path.join(__dirname, 'data.json')
 fs.readFile(filePath, 'utf8', (err, data) => {
   if (err) {
@@ -36,7 +37,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/meat', (req, res) => {
-  res.render('slider', viewData)
+  res.render('slider')
 })
 
 
