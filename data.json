@@ -1,0 +1,109 @@
+{
+  "meatlovers": [
+    {
+      "id": 1,
+      "name": "Beef",
+      "image": "/img/beef.jpg",
+      "rarity": "common",
+      "healthRating": 4,
+      "ageMonths": 10,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 2,
+      "name": "Salmon",
+      "image": "/img/salmon.jpg",
+      "rarity": "common",
+      "healthRating": 5,
+      "ageMonths": 2,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 3,
+      "name": "Pork",
+      "image": "/img/pork.jpg",
+      "rarity": "common",
+      "healthRating": 2,
+      "ageMonths": 15,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 4,
+      "name": "Pufferfish",
+      "image": "/img/pufferfish.jpg",
+      "rarity": "uncommon",
+      "healthRating": 5,
+      "ageMonths": 1,
+      "poisonStatus": "poisonous"
+    },
+    {
+      "id": 5,
+      "name": "Kiwi Bird",
+      "image": "/img/kiwi.jpg",
+      "rarity": "rare",
+      "healthRating": 4,
+      "ageMonths": 1,
+      "poisonStatus": "not poisonous"
+    },
+    {
+      "id": 6,
+      "name": "Chicken",
+      "image": "/img/kiwi.jpg",
+      "rarity": "rare",
+      "healthRating": 4,
+      "ageMonths": 1,
+      "poisonStatus": "not poisonous"
+    }
+  ],
+  "notMeat" : [
+    {
+      "id": 1,
+      "name": "Jelly Bite",
+      "Image": "",
+      "rarity": "rare",
+      "healthRating": 2,
+      "ageMonths": 8,
+      "poisonStatus": "not poisonous"
+    },
+  
+    {
+      "id": 2,
+      "name": "Grapefruit",
+      "Image": "",
+      "rarity": "common",
+      "healthRating": 4,
+      "ageMonths": 0.5,
+      "poisonStatus": "not poisonous"
+    },
+  
+    {
+      "id": 3,
+      "name": "Paint",
+      "Image": "",
+      "rarity": "common",
+      "healthRating": 0,
+      "ageMonths": 15,
+      "poisonStatus": "poisonous"
+    },
+  
+    {
+      "id": 4,
+      "name": "Seaweed",
+      "Image": "",
+      "rarity": "uncommon",
+      "healthRating": 5,
+      "ageMonths": 4,
+      "poisonStatus": "not poisonous"
+    },
+  
+    {
+      "id": 5,
+      "name": "Seeds",
+      "Image": "",
+      "rarity": "common",
+      "healthRating": 5,
+      "ageMonths": 6,
+      "poisonStatus": "not poisonous"
+    }
+  ]
+}
