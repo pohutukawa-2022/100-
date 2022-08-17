@@ -1,8 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
-const fs = require('fs')
+const fs = require('fs').promises
 const path = require('path')
-
 const server = express()
 
 // Server configuration
@@ -13,25 +12,6 @@ server.use(express.urlencoded({ extended: false }))
 server.engine('hbs', hbs.engine({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
-// Getting data from json
-// const { getData, updateData } = require('./utils')
-// let food
-// getData((data) => {
-//     food = data
-//     updateData()
-// })
-
-const filePath = path.join(__dirname, 'data.json')
-fs.readFile(filePath, 'utf8', (err, data) => {
-  if (err) {
-    console.error('Unable to find puppies data ', error.message)
-    return
-  }
-  // returns data.json as an object
-  const json = JSON.parse(data)
-  console.log(json)
-})
-
 server.get('/', (req, res) => {
   res.render('home')
 })
@@ -39,10 +19,32 @@ server.get('/', (req, res) => {
 server.get('/meat', (req, res) => {
   res.render('slider')
 })
-server.get('/meat/img-info', (req, res) => {
-  res.render('meat')
+
+server.get('/meat/img-info/:id', async (req, res) => {
+  const dataPath = path.join(__dirname, 'meat.json')
+  await fs.readFile(dataPath, 'utf-8')
+    .then((contents) => {
+      const data = JSON.parse(contents)
+      // const meat = Object.keys(data)
+      
+      const meat = data.find( (Element) => Element.id === Number(req.params.id))
+
+      const viewData = {
+        name: meat.name,
+        rarity: meat.rarity,
+        healthRating: meat.healthRating,
+        ageMonths: meat.ageMonths,
+        poisonStatus: meat.poisonStatus
+      }
+      res.render('info', viewData)
+    })
+    .catch((error) => {
+      console.error('Getting data failed yet again')
+    })
 })
-
-
-
+function getMeatData(thisKey, value) {
+  const filePath = path.join(__dirname, 'meat.json')
+  const newData = {  }
+}
+console.log(meatFile())
 module.exports = server

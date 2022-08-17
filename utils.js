@@ -8,32 +8,37 @@ function getData(cb) {
       console.error('Unable to find puppies data ', error.message)
       return
     }
-    // returns data.json as an object
-    cb(JSON.parse(data))
+    try {
+      // returns data.json as an object
+      cb(JSON.parse(data))
+    } catch (parseErr) {
+      console.error('Parsing json data failed yet again')
+    }
   })
 }
-function updateData() {
-    // get starting data
-    getData( data => {
-        // update data
-        const newData = {
-            ...data,
-            url: '/meat'
+function updateData(cb) {
+  // get starting data
+  getData((data) => {
+    // update data
+    const newData = {
+      ...data,
+    }
+    // JSON.stingify
+    try {
+      const stringData = JSON.stringify(newData, null, 2)
+      // write back to the file
+      const filePath = path.join(__dirname, 'data.json')
+      fs.writeFile(filePath, stringData, 'utf8', (err) => {
+        if (err) {
+          console.error(' error error freckin error')
+          return
         }
-        // JSON.stingify
-        try {
-            const stringData = JSON.stringify(newData, null, 2)
-            // write back to the file
-            fs.writeFile(filepath, stringData, 'utf8', (err) => {
-                if (err) {
-                    console.error(' error error freclin error')
-                }
-
-            })
-        } catch (stringifyErr) {
-            console.log('Failed at updating data')
-        }
-    })
-} 
+        cb()
+      })
+    } catch (stringifyErr) {
+      console.log('Failed at updating data')
+    }
+  })
+}
 
 module.exports = { getData, updateData }

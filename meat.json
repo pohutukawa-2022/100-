@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Beef",
+      "image": "/img/beef.jpg",
+      "rarity": "common",
+      "healthRating": 4,
+      "ageMonths": 10,
+      "poisonStatus": "not poisonous",
+      "img-info": "/meat/img-info"
+    },
+    {
+      "id": 2,
+      "name": "Salmon",
+      "image": "/img/salmon.jpg",
+      "rarity": "common",
+      "healthRating": 5,
+      "ageMonths": 2,
+      "poisonStatus": "not poisonous",
+      "img-info": "/meat/img-info"
+    },
+    {
+      "id": 3,
+      "name": "Pork",
+      "image": "/img/pork.jpg",
+      "rarity": "common",
+      "healthRating": 2,
+      "ageMonths": 15,
+      "poisonStatus": "not poisonous",
+      "img-info": "/meat/img-info"
+    },
+    {
+      "id": 4,
+      "name": "Pufferfish",
+      "image": "/img/pufferfish.jpg",
+      "rarity": "uncommon",
+      "healthRating": 5,
+      "ageMonths": 1,
+      "poisonStatus": "poisonous",
+      "img-info": "/meat/img-info"
+    },
+    {
+      "id": 5,
+      "name": "Kiwi Bird",
+      "image": "/img/kiwi.jpg",
+      "rarity": "rare",
+      "healthRating": 4,
+      "ageMonths": 1,
+      "poisonStatus": "not poisonous",
+      "img-info": "/meat/img-info"
+    },
+    {
+      "id": 6,
+      "name": "Chicken",
+      "image": "/img/kiwi.jpg",
+      "rarity": "rare",
+      "healthRating": 4,
+      "ageMonths": 1,
+      "poisonStatus": "not poisonous",
+      "img-info": "/meat/img-info"
+    }
+  ]
