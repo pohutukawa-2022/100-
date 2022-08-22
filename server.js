@@ -46,5 +46,4 @@ function getMeatData(thisKey, value) {
   const filePath = path.join(__dirname, 'meat.json')
   const newData = {  }
 }
-console.log(meatFile())
 module.exports = server
